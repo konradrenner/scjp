@@ -1,0 +1,8 @@
+1. Klasse Blocks
+Auflistung verschiedener Möglichkeiten der Benutzung von Blöcken und Identifier
+2. Klasse Typen
+Verwendung und casts der primitiven Datentypen und deren Wrapper-Klassen, inkl. Boxing
+3. Klasse References
+Pass-by-value Konzept, this und super Keywords
+4. Klasse Operatoren
+Auflistung verschiedener Möglichkeiten zur Verwendung von Operatoren

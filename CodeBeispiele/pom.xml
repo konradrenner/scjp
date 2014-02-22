@@ -11,9 +11,10 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <netbeans.hint.license>gpl30</netbeans.hint.license>
   </properties>
-
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
