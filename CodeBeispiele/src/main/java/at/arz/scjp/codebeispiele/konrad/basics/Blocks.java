@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package at.arz.scjp.codebeispiele.konrad;
+package at.arz.scjp.codebeispiele.konrad.basics;
 
 import java.util.Arrays;
 
