@@ -49,7 +49,7 @@ public class Refernces {
         System.out.println("doSomething index:" + index);
     }
 
-    public static final void main(String[] args) {
+    public static void main(String[] args) {
         new Subclass();
         new Subclass(456);
         new Subclass(new Date(123));
