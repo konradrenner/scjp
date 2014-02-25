@@ -59,6 +59,7 @@ public class Typen {
         
         Integer[] arr = new Integer[0];
         int[] arrZwei = new int[0];
+        int[][] arrDrei = new int[2][];
         
         doSomething(idx);
         doSomething(i);
@@ -66,6 +67,7 @@ public class Typen {
         doSomething(arr);
         doSomething(arrZwei);
         doSomething(0, 5, 6);
+        doSomething(arrDrei);
 
 
         String a = "sdfd";
