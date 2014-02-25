@@ -60,6 +60,8 @@ public class Typen {
         Integer[] arr = new Integer[0];
         int[] arrZwei = new int[0];
         int[][] arrDrei = new int[2][];
+        String[] sarr = {"sdf", "sfsdf"};
+        String[] sarrzwei[] = new String[0][];
         
         doSomething(idx);
         doSomething(i);
@@ -68,7 +70,8 @@ public class Typen {
         doSomething(arrZwei);
         doSomething(0, 5, 6);
         doSomething(arrDrei);
-
+        doSomething(sarr);
+        doSomething(sarrzwei);
 
         String a = "sdfd";
         //Der folgende Code ist auskommentiert, weil er nicht kompilieren wuerde (Integer und String stehen nicht in einer Vererbungshierarchie und koennen somit mit instanceof nicth verglichen werden
