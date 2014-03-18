@@ -50,8 +50,6 @@ public class Generics {
             }
         }
 
-        //nicht moeglich bei
-
         return 0;
     }
 
