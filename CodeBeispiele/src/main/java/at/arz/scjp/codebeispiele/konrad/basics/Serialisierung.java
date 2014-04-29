@@ -35,6 +35,7 @@ public class Serialisierung {
         save.writeObject(b);
         save.flush();
 
+        B.STATISCH = 7;
 
         ObjectInputStream restore = new ObjectInputStream(new FileInputStream("datafile"));
         B z = (B) restore.readObject();
@@ -42,6 +43,7 @@ public class Serialisierung {
         System.err.println("instanz:" + (b == z));
         System.err.println("b.i:" + b.i);
         System.err.println("b.z:" + z.i);
+        System.err.println("B.STATISCH:" + B.STATISCH);
     }
 }
 
@@ -61,6 +63,8 @@ class A {
 }
 
 class B extends A implements Serializable {
+
+    static int STATISCH = 6;
 
     public B() {
         super("Hi Tom");
