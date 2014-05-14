@@ -95,5 +95,9 @@ public class Operatoren {
         System.out.println("erg:" + erg);
         erg = (i > x) ^ (x > i);
         System.out.println("erg:" + erg);
+
+        //Exklusives OR => die beiden Ausdruecke mussen unterschiedliche Ergebnisse liefern, sodass true
+        System.out.println("Beide gleich:" + (true ^ true));
+        System.out.println("Beide nicht gleich:" + (false ^ true));
     }
 }
