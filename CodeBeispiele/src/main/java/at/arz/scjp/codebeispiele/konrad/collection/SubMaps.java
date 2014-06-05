@@ -14,35 +14,37 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package at.arz.scjp.codebeispiele.konrad.format;
+package at.arz.scjp.codebeispiele.konrad.collection;
 
-import java.math.BigDecimal;
-import java.text.DecimalFormat;
+import java.util.NavigableMap;
+import java.util.TreeMap;
 
 /**
  *
  * @author Konrad Renner
  */
-public class Formatting {
+public class SubMaps {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int zahl = 5;
-        float floating = -2F;
-        BigDecimal decimal = BigDecimal.valueOf(3.2);
+        TreeMap<Integer, String> map = new TreeMap<>();
+        map.put(0, "null");
+        map.put(1, "eins");
+        map.put(2, "zwei");
+        map.put(3, "drei");
+        map.put(4, "vier");
 
-        //%[arg_index$][flags][width][.precision]conversion char
-        System.out.printf("Int: %2$+05d , Float: %1$-,7.2f, Decimal: %3f", floating, zahl, decimal);
-
-        System.out.println("");
-
-        double d = 1289978799345.67890;
-        DecimalFormat df = new DecimalFormat("###,##0.00");
-        System.out.println(df.format(d));
-
-        System.out.println("");
-        System.out.printf("Current value is %1$-10b", true);
+        try {
+            NavigableMap<Integer, String> subMap = map.subMap(0, true, 4, false);
+            System.out.println(subMap);
+            System.out.println(subMap.size());
+            System.out.println(subMap.subMap(0, 3));
+            System.out.println(subMap.subMap(0, true, 3, false));
+            System.out.println(subMap.subMap(0, true, 3, false).size());
+        } catch (IllegalArgumentException ex) {
+            System.out.println("Exception:" + ex.getMessage());
+        }
     }
 }
