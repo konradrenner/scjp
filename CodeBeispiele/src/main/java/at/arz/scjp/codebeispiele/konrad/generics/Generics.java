@@ -33,7 +33,9 @@ public class Generics {
 
         Typisiert<? extends Number> juhu = i.juhu(i);
 
-        ArrayList<? super C> arr = new ArrayList<B>();
+        ArrayList<? super B> arr = new ArrayList<A>();
+
+        Typisiert<Integer> typen = null;
 
         arr.add(new C());
     }

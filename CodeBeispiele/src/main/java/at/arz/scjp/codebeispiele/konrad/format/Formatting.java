@@ -29,6 +29,10 @@ public class Formatting {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.printf("45%2$b%3$+02d", 978, 654, 321, 111);
+
+        System.out.println("");
+
         int zahl = 5;
         float floating = -2F;
         BigDecimal decimal = BigDecimal.valueOf(3.2);
