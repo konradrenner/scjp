@@ -29,6 +29,9 @@ public class Formatting {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.printf("%2$(03d:%,d", 52, 63);
+
+        System.out.println("");
 
         System.out.printf("%1$,+07d", 7252);
 
