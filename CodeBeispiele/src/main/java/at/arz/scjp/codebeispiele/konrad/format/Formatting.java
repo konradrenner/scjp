@@ -29,6 +29,11 @@ public class Formatting {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
+        System.out.printf("%1$,+07d", 7252);
+
+        System.out.println("");
+
         System.out.printf("45%2$b%3$+02d", 978, 654, 321, 111);
 
         System.out.println("");
@@ -49,4 +54,36 @@ public class Formatting {
         System.out.println("");
         System.out.printf("Current value is %1$-10b", true);
     }
+}
+
+interface Iface {
+}
+
+class CClass implements Iface {
+}
+
+enum Chem {
+
+    A;
+
+    int x;
+
+    public void setX(int y) {
+        x = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+}
+
+abstract class Test {
+
+    Test() {
+        if (true) {
+            return;
+        }
+    }
+
+    public native void hallo();
 }

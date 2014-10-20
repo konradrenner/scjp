@@ -17,6 +17,7 @@
 package at.arz.scjp.codebeispiele.konrad.cag;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -30,6 +31,13 @@ import java.util.List;
 public class Generics {
 
     public static void main(String[] args) {
+
+        Date d = new Date();
+        Date d2 = d;
+        Date d3 = d;
+        d = null;
+        System.out.println(d + " " + d2 + " " + d3);
+
         List<Number> nummern = new ArrayList<>();
         nummern.add(Double.valueOf("0.1"));
         nummern.add(0);
@@ -63,5 +71,18 @@ public class Generics {
     //Unbounded Wildcard, gleichbedeutend wie <? extends Object>
     public Object getNullstes(List<?> liste) {
         return liste.get(0);
+    }
+}
+
+class Aa {
+}
+
+class Ba extends Aa {
+}
+
+class C<E extends Aa> {
+
+    public E tuWas(E typ) {
+        return typ;
     }
 }

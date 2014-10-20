@@ -17,34 +17,44 @@
 
 package at.arz.scjp.codebeispiele.konrad.basics.package2;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Konrad Renner
  */
 public class Nochmal {
 
-//    public static void printFirst(Serializable... va) {
-//        System.out.print("Integer:" + va[0]);
-//    }
+    public static void printFirst(Serializable... va) {
+        System.out.print("Integer:" + va[0]);
+    }
 
     public static void printFirst(Integer... va) {
         System.out.print("Integer:" + va[0]);
     }
 
-//    public static void printFirst(int... aa) {
-//        System.out.print("int:" + aa[0]);
+//    public static void printFirst(int[] va) {
+//        System.out.print("Integer:" + va[0]);
 //    }
+
+    public static void printFirst(int... aa) {
+        System.out.print("int:" + aa[0]);
+    }
 
     public static void printFirst(int aa) {
 //        System.out.print("int:" + aa[0]);
     }
 
-    public static void printFirst(Object... aa) {
+    public static void printFirst(Object[] arr) {
+        //nix
+    }
+
+    public static void printFirst(Number... aa) {
         System.out.print("int:" + aa[0]);
     }
 
     public static void main(String args[]) {
-        printFirst(3, 4);
+        printFirst(3);
 
         String s = new String(new char[]{0});
     }
