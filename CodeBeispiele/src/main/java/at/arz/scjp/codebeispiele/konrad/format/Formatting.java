@@ -28,7 +28,19 @@ public class Formatting {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
+//        The format string values you should know are
+//❑
+// Flags: -, +, 0, "," , and (
+//❑
+// Conversions: b, c, d, f, and s
+//
+//        
+
+        System.out.printf("%2d", 123456);
+
+        System.out.println("");
+
         System.out.printf("%2$(03d:%,d", 52, 63);
 
         System.out.println("");
@@ -46,7 +58,7 @@ public class Formatting {
         BigDecimal decimal = BigDecimal.valueOf(3.2);
 
         //%[arg_index$][flags][width][.precision]conversion char
-        System.out.printf("Int: %2$+05d , Float: %1$-,7.2f, Decimal: %3f", floating, zahl, decimal);
+        System.out.printf("Int: %2$+05d , Float: %1$-,7.2f, Decimal: %3f, Boolean(null): %4$b", floating, zahl, decimal, null);
 
         System.out.println("");
 
